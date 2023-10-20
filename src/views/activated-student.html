@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Active Student Notification</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #444444;
+        background-color: #f6f6f6;
+      }
+      .container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: #444444;
+      }
+      p {
+        margin: 20px 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #444444;
+      }
+      .info {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #cccccc;
+        font-size: 16px;
+        color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alumni Account Activation Notification</h1>
+      <p>Dear {{studentName}},</p>
+      <p>
+        We are pleased to inform you that Your account has been created. You can
+        log into your account.
+      </p>
+      <div class="info">
+        <p>Your Student ID is: {{studentID}}</p>
+        <p>Your Email Address is: {{emailAddress}}</p>
+      </div>
+      <p>
+        Please contact us if you have any questions or concerns. Thank you for
+        being a valued member of our student community.
+      </p>
+    </div>
+  </body>
+</html>

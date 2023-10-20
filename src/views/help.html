@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Help Question</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      h1 {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 900;
+        background-color: #007bff;
+        padding: 40px 20px;
+        margin: 0;
+      }
+      p {
+        font-size: 18px;
+        margin: 0 0 20px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      strong {
+        font-weight: 700;
+      }
+      .button {
+        background-color: #007bff;
+        color: #ffffff;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .button:hover {
+        background-color: #0069d9;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Help Question</h1>
+      <p>Dear Admin,</p>
+      <p>A user has submitted the following help question:</p>
+      <p><strong>Question:</strong> {{question}}</p>
+      <p><strong>User Details:</strong></p>
+      <ul>
+        <li><strong>Name:</strong> {{name}}</li>
+        <li><strong>Email:</strong> {{email}}</li>
+      </ul>
+    </div>
+  </body>
+</html>

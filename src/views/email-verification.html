@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Verification</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #444444;
+        background-color: #f6f6f6;
+      }
+      .container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: #444444;
+      }
+      p {
+        margin: 20px 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #444444;
+      }
+      .verify-link {
+        display: inline-block;
+        margin: 20px 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #007bff;
+        border-radius: 3px;
+        border: none;
+      }
+      .verify-link:hover {
+        background-color: #0062cc;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Email Verification</h1>
+      <p>
+        Thank you for signing up! To complete your registration, please click
+        the link below to verify your email address:
+      </p>
+      <a class="verify-link" href="{{verificationURI}}">Verify Email Address</a>
+      <p>If you did not sign up for this account, please ignore this email.</p>
+    </div>
+  </body>
+</html>
