@@ -1,0 +1,86 @@
+.RightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.FollowersCard {
+  border-radius: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  background-color: var(--cardColor);
+  padding-bottom: 1.5rem;
+  padding: 1.5rem;
+  min-height: 24rem;
+  max-height: 24rem;
+  overflow: scroll;
+}
+
+.follower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follower > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.followerImage {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name > span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.fc-button {
+  height: 2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.UnfollowButton {
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  cursor: pointer;
+  background: transparent;
+}
+
+.FollowersCard > span {
+  font-weight: bold;
+  color: orange;
+  align-self: center;
+  cursor: pointer;
+}
+.around-people-text {
+  text-align: center;
+}
+.plus-icon {
+  margin-right: 3px;
+}
+.FilterDesc {
+  font-size: 10px;
+  color: black;
+  text-align: center;
+}
+.ContentRadio {
+  font-family: "Poppins";
+  color: red;
+}
+.check-cirlcle-icon:hover {
+  color: #bf40bf;
+  cursor: pointer;
+}

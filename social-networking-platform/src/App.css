@@ -1,0 +1,89 @@
+:root {
+  --primary: #c67af3;
+  --blue: #0c48aa;
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: #fff;
+  --buttonBg: linear-gradient(98.63deg, #c67af3 0%, #810e81 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4cb256;
+  --video: #4a4eb7;
+  --location: #ef5757;
+  --shedule: #e1ae4a;
+  --red: #ff2400;
+  /* --toastify-font-family: "Poppins"; */
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+  background: #f3f3f3;
+  padding: 1rem 1rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: #a6ddf0;
+  filter: blur(150px);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+  font-family: "Poppins";
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Form Styling */
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infoInput {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  font-family: "Poppins";
+}
+
+.infoForm > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 90%;
+}
+
+.infoButton {
+  width: 20rem;
+  height: 3rem;
+}

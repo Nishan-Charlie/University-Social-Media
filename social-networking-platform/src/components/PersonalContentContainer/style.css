@@ -1,0 +1,279 @@
+.PostSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  overflow: auto;
+}
+.PostShare {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--cardColor);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.PostShare > img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+.PostShare > div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+}
+
+.PostShare > div > input {
+  background-color: var(--inputColor);
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+}
+
+.postOptions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.option {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.option:hover {
+  cursor: pointer;
+}
+.ps-button {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  width: 30%;
+}
+
+.previewImage {
+  position: relative;
+}
+
+.previewImage > svg {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.previewImage > img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.previewImage > video {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.option-title {
+  font-family: "Poppins";
+}
+.Post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.Post > img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.postReact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.Posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post-user-profile {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.post-user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-user-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.post-username {
+  font-size: 13px;
+  font-weight: bold;
+}
+.post-time {
+  font-size: 10px;
+  font-weight: 300;
+}
+.post-user-left {
+  display: flex;
+  align-items: center;
+}
+.post-desc {
+  font-size: 14px;
+}
+.like-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.like-text {
+  color: var(--gray);
+  font-size: 12px;
+  margin-left: 3px;
+}
+.MoreOption {
+  cursor: pointer;
+}
+.CancelPreview {
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
+}
+.EditTimeline {
+  /* width: 900px; */
+  /* padding: 15px; */
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center;
+  align-self: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.EditTimelineImage {
+  /* object-fit: "cover"; */
+  width: 100%;
+  height: 20rem;
+  align-self: center;
+  border-radius: 1rem;
+}
+.EditTimelineInput {
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+  width: 80%;
+}
+.commentProfile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.CommentInput {
+  background-color: var(--inputColor);
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+  width: 100%;
+}
+.CommentSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.SendComment {
+  background-color: #bf40bf;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.LikeRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+.CommentRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.CommentBackground {
+  background-color: rgba(40, 52, 62, 0.07);
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.CommentView {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.CommenterName {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: bold;
+}
+.CommenterUsername {
+  font-family: "Poppins";
+  font-size: 12px;
+}
+.CommenterValue {
+  font-family: "Poppins";
+  font-size: 12px;
+}
+.CommentsContainer {
+  margin-top: 1rem;
+}

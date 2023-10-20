@@ -1,0 +1,31 @@
+.navIcons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navIcons > a > img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navIcons > img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navIcons > img:hover {
+  cursor: pointer;
+}
+
+.r-button {
+  height: 3rem;
+  width: 80%;
+  align-self: center;
+}
+.nav-icon {
+  color: #242d49;
+}
+.custom-antd-list {
+  align-items: center !important ;
+}

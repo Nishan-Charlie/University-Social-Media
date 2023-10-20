@@ -1,0 +1,84 @@
+.Auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 4rem;
+  position: relative;
+  flex-direction: row;
+}
+.Auth__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?cs=srgb&dl=pexels-veeterzy-114979.jpg&fm=jpg")
+    0 0 / cover no-repeat;
+  opacity: 0.7;
+}
+
+.Auth > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+
+.a-left {
+  gap: 2rem;
+}
+
+.a-left > img {
+  width: 36rem;
+  height: 36rem;
+}
+
+.Webname > h1 {
+  font-size: 3rem;
+  background-color: red;
+
+  background-image: var(--buttonBg);
+
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.Webname > h6 {
+  font-size: 0.85rem;
+}
+
+.authForm {
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.authForm > div {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.a-right {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+}
+.valid-password-text {
+  font-size: 11px;
+  color: rgb(230, 12, 12);
+  text-align: center;
+}
+.not-valid {
+  background-color: #ffe4e4 !important;
+  border: 0.5px solid #ffc1c1 !important;
+}

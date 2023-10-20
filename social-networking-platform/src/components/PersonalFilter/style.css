@@ -1,0 +1,445 @@
+.ProfileCard {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  overflow-x: clip;
+  background-color: var(--cardColor);
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+.ContentTypeCard {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: clip;
+  /* background-color: var(--cardColor); */
+  padding-top: 1.5rem;
+  padding-bottom: 1.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.ProfileImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.ProfileName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  font-weight: bold;
+}
+
+.followStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0.75rem; */
+}
+
+.followStatus > hr {
+  width: 85%;
+  border: 1px solid var(--hrColor);
+}
+
+.followStatus > div {
+  display: flex;
+  gap: 0.5rem;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+}
+.follow > span:nth-of-type(1) {
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.follow > span:nth-of-type(2) {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.vl {
+  height: 150%;
+  border-left: 2px solid var(--hrColor);
+}
+
+.ProfileCard > span {
+  font-weight: bold;
+  color: orange;
+  align-self: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.ProfileSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* align-items: center; */
+  overflow: auto;
+}
+.LogoSearch {
+  display: flex;
+  gap: 0.75rem;
+}
+.Search {
+  display: flex;
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  padding: 5px;
+}
+.Search > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.s-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(106.23deg, #f99827 0%, #f95f35 100%);
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+}
+.r-button {
+  height: 3rem;
+  width: 80%;
+  align-self: center;
+}
+.signout-button {
+  height: 3rem;
+  width: 80%;
+  align-self: center;
+  background: linear-gradient(98.63deg, #ff2400 0%, #961906 100%);
+}
+.name {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+.username {
+  font-family: "Poppins";
+  font-size: 12px;
+  opacity: 0.75;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  /* display: inline-block; */
+  /* padding: 1rem; */
+  cursor: pointer;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+.custom-ui {
+  background-color: #fff;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 15px;
+}
+.custom-no {
+  width: 8rem;
+}
+.custom-yes {
+  width: 8rem;
+  background: linear-gradient(98.63deg, #ff2400 0%, #961906 100%);
+}
+.react-confirm-alert-overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 17rem;
+}
+.center-text {
+  text-align: center;
+}
+.FilterDesc {
+  font-size: 10px;
+  color: black;
+  text-align: center;
+  width: 90%;
+}
+.ContentRadio {
+  font-family: "Poppins";
+  color: red;
+}
+.ImageTag {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid #bf40bf;
+  padding: 2px;
+}
+.ProfileTopBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  gap: 1rem;
+}
+.EditProfileIcon {
+  padding: 0.5rem;
+  background-color: #bf40bf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--profileShadow);
+}
+.SignOutProfileIcon {
+  padding: 0.5rem;
+  background-color: #ff2400;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--profileShadow);
+}
+.FollowersRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.FollowColumn {
+  display: flex;
+  flex-direction: column;
+}
+.followHeader {
+  font-size: 13px;
+  opacity: 0.75;
+}
+.followValue {
+  font-size: 14px;
+  font-weight: bold;
+}
+.FilterIcon {
+  cursor: pointer;
+}
+.CenterSpace {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.CustomAntInput {
+  /* border: none; */
+  /* outline: none; */
+  background-color: var(--inputColor);
+  /* border-radius: 8px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+:where(.css-dev-only-do-not-override-1g9r9qu).ant-select:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  /* border: none; */
+  /* outline: none; */
+  background-color: var(--inputColor);
+  /* border-radius: 8px; */
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  font-family: "Poppins";
+  font-size: 14px;
+}
+:where(.css-dev-only-do-not-override-1g9r9qu).ant-form-item {
+  margin-bottom: 0px !important;
+}
+:where(.css-dev-only-do-not-override-1g9r9qu).ant-col-8 {
+  /* max-width: 0 !important; */
+  /* flex: 0 !important; */
+}
+.ProfileTopContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0 1rem 2rem;
+}
+.LockIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.LockIconCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+/* toggle */
+.react-toggle {
+  touch-action: pan-x;
+
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-toggle-screenreader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.react-toggle--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.react-toggle-track {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #4d4d4d;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #000000;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: #19ab27;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #128d15;
+}
+
+.react-toggle-track-check {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  left: 8px;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track-check {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle-track-x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  right: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track-x {
+  opacity: 0;
+}
+
+.react-toggle-thumb {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #4d4d4d;
+  border-radius: 50%;
+  background-color: #fafafa;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  left: 27px;
+  border-color: #19ab27;
+}
+
+.react-toggle--focus .react-toggle-thumb {
+  -webkit-box-shadow: 0px 0px 3px 2px #0099e0;
+  -moz-box-shadow: 0px 0px 3px 2px #0099e0;
+  box-shadow: 0px 0px 2px 3px #0099e0;
+}
+
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+  -webkit-box-shadow: 0px 0px 5px 5px #0099e0;
+  -moz-box-shadow: 0px 0px 5px 5px #0099e0;
+  box-shadow: 0px 0px 5px 5px #0099e0;
+}
